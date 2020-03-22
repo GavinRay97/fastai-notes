@@ -78,8 +78,7 @@ def from_name_func(path:PathOrStr, fnames:FilePathList, label_func:Callable, val
 
   > Why 224 pixels? This is the standard size for historical reasons (old pretrained models require this size exactly), but you can pass pretty much anything. If you increase the size, you'll often get a model with better results (since it will be able to focus on more details) but at the price of speed and memory consumption; or vice versa if you decrease the size.
 
-<details>
-  <summary>🗒 Notes on Important of Validation Data & the Overfitting Problem 👇</summary>
+🗒 **Notes on Important of Validation Data & the Overfitting Problem**
 
 Models produced with fast.ai will show you their accuracy using _only_ validation data. The book discusses why this is so important:
 
@@ -92,8 +91,6 @@ Over-fitting is a **_regression from the ability to generalize_**. Rather than c
 The authors give an example of an overfit model trained on randomized data based on the function `x^2`, where it can no longer see the general trend and molds the curve to fit it's own data:
 
 ![](./images/overfitting-problem.png)
-
-</details>
 
 Documentation from fast.ai V1 about `DataBunch` provides some information about this class of modules:
 
