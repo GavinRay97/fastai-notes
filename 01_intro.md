@@ -1,5 +1,9 @@
 # 01_intro
 
+These notes go in accordance with the following fast.ai book chapter notebook:
+
+https://github.com/fastai/fastbook/blob/master/01_intro.ipynb
+
 ## New-Terms Glossary
 
 - The _functional form of a model_ is called its _architecture_. This is the finished product.
